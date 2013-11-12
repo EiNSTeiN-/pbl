@@ -9,5 +9,5 @@ Setup
 2. Import the SQL schema in your database.
 3. Add your user in the database ```insert into users (username, password) values ('einstein', 'md5-hash-of-password')```
 4. Run ```make``` to generate javascript code.
-5. Change pbl-daemon.py to match your installation path
+5. Edit pbl-daemon.py with the correct installation path, and copy it to /etc/init.d
 
