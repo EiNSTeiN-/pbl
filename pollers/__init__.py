@@ -20,8 +20,8 @@ POLLERS = dict(
     pastebin=Pastebin(
         name='pastebin.com',
         interval=10,
-        poll_url='http://pastebin.com/ajax/realtime_data.php',
-        regexp=r'created a new [^\[]* \[<a href="\/([^"]+)">[^<]+<\/a>\]'
+        poll_url='http://pastebin.com/archive',
+        regexp=r'<td><img src="[^"]*"  class="i_p0" alt="" border="0" \/><a href="\/([^"]+)">[^<]+<\/a><\/td>'
     ),
 #    gist=Gist(
 #        name='gist.github.com',
